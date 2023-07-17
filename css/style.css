@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    
+}
+
+.principal{
+    
+    width: 1200px;
+    height: inherit;
+    margin: auto;
+}
+
+.principal h1{
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+#titulo{
+    width: 800px;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    margin: auto;
+    
+}
+
+#imagem{
+    width: 100%;
+    height: 550px;
+    /* Coloca uma imagem de fundo */
+    background-image: url(../imagem/imageBackground.png);
+    /* Permite que a imagem  não se repita caso for menor que o espaço*/
+    background-repeat: no-repeat;
+    /* Permite alinhar a imagem dentro da div*/
+    background-position: top;
+     /* Permite ajustar o tamnho da imagem em: px, %, etc. 
+        - cover - Aplica um estilo de zoom na imagem, fazendo com que ela ocupe todo o espaço na div*/
+    background-size: cover;
+    /* Permite travar a imagem no fundo, para aplicar um efeito de transição entre elementos*/
+    background-attachment: fixed;
+
+}
+
+#search{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.teste{
+    box-shadow: 0px -10px 15px #3ff107;
+}
+
+#search .principal{
+    padding-top: 20px;
+}
+
+#seach label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#search input[type=text]{
+    width: 330px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    
+}
+
+#search input[type=button]{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(8, 228, 26);
+    color: #000000;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#nomePersonagem::placeholder{
+    text-align: center;
+}
+
+#cardsPersonagens{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+#cardsPersonagens .principal{
+    padding-top: 20px;
+}
+
+.card{
+    width: 360px;
+    height: 600px;
+    float: left;
+    margin-left: 38px;
+    margin-bottom: 38px;
+    
+}
+
+.card figure{
+    width: 280px;
+    height: 318px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    
+}
+
+.card figure img{
+    width: inherit;
+    height: inherit;
+}
+
+
+.personagemStatus {
+    height: 50px;
+    margin-bottom: 35px;
+}
+
+.lastLocation{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.firstSeen{
+    width: 100%;
+    height: 50px;
+    /*background-color: purple;*/
+    margin-bottom: 20px;
+}
+
+.personagemStatus h2{
+    text-align: center;
+    font-family: Copperplate Gothic;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #ffffff;
+}
+
+.status{
+    display: flex;
+    text-transform: capitalize;
+    color: #ffffff;
+    justify-content: center;
+    margin: 10px auto auto
+
+}
+
+.textGrey{
+    align-items: center;
+    text-transform: capitalize;
+    color: rgb(86 220 18);
+    font-family: Copperplate Gothic;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.lastLocation h3{
+    width: 50%;
+    font-size: 15px;
+    margin: 10px  auto auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.firstSeen h3{
+   font-size: 15px;
+   margin: 10px auto auto;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #ffffff;
+}
+
+.principal1{
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#proxPag {
+    height: 45px;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000000;
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagAnt{
+    height: 45px;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000000;
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#proxPag:hover{
+    background-color:rgb(86 220 18) ;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#pagAnt:hover{
+    background-color:rgb(86 220 18) ;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#botoesPagina{
+    bottom: 410px;
+    left: 72%;
+    display: flex;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+}
